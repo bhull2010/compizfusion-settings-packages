@@ -10,18 +10,9 @@ include /usr/share/python/python.mk
 	dh $@
 
 override_dh_auto_build:
-	[ -f images/scalable/apps/plugin-matecompat.svg ] || \
-		cp debian/plugin-matecompat.svg images/scalable/apps
-	# lintian complains it's invalid. in fact, according to the following
-	# link, Mandingo only *officially* has a ISO 639-2 code which is "man"
-	# http://www.loc.gov/standards/iso639-2/php/code_list.php
-	if [ -f po/md.po ]; then mv po/md.po po/man.po; fi
 	python ./setup.py build --prefix=/usr
 
 override_dh_clean:
-	#dpkg-source considers it a --commit'able change
-	rm -f images/scalable/apps/plugin-matecompat.svg
-	if [ -f po/man.po ]; then mv po/man.po po/md.po; fi
 	python ./setup.py clean
 	rm -rf build-stamp build installed_files ccsm.desktop
 	dh_clean 
