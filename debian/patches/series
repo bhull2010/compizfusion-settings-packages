@@ -1,6 +1,5 @@
 pygtk-breakage-workaround.patch
 # updated patch from fedora, below
-ccsm-removeshebangs.patch
 # these are also from fedora
 widget_dialog.patch
 widgets_filter.patch
