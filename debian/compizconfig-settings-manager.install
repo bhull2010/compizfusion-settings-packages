@@ -1,0 +1,10 @@
+usr/bin/ccsm
+usr/lib/python*/*-packages/ccm/*.py
+usr/share/applications/ccsm.desktop
+usr/share/ccsm/images/*.png
+usr/share/icons/hicolor/*/apps/*.svg
+usr/share/icons/hicolor/*/apps/*.png
+usr/share/ccsm/icons/hicolor/*/*/*.svg
+usr/share/ccsm/icons/hicolor/*/*/*.png
+usr/share/locale/en_GB
+usr/share/locale/fr

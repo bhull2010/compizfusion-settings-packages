@@ -1,0 +1,30 @@
+Source: ccsm
+Priority: extra
+Maintainer: Jasmine Hassan <jasmine.aura@gmail.com>
+Uploaders: Sean Finney <seanius@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), intltool,
+ python (>= 2.5.4-1~), python-support (>= 0.90), 
+Standards-Version: 3.9.3
+Section: x11
+Homepage: http://wiki.compiz.org/CCSM
+
+Package: compizconfig-settings-manager
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, librsvg2-common, python-compizconfig (>= 0.8.4-2), python-gtk2
+Description: Compizconfig Settings Manager
+ Compiz Fusion is the result of the re-unification of the Beryl-project
+ and the community around the Compiz Window Manager. It seeks to provide
+ an easy and fun-to-use windowing environment, allowing use of the
+ graphics hardware to provide impressive effects, amazing speed and
+ unrivalled usefulness
+ .
+ This package provides python-based "settings manager", a graphical interface
+ used to administer the various options for the compiz-fusion system.
+
+Package: compizconfig-settings-manager-locales
+Architecture: all
+Depends: compizconfig-settings-manager, locales, ${misc:Depends}
+Description: Translations for the Compizconfig Settings Manager
+ This package contains translations for the Compizconfig Settings Manager, 
+ needed when you want to be able to select an interface language other 
+ than English or French.
