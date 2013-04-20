@@ -1,4 +1,3 @@
-001-desktop-file-category-noencoding.patch
 pygtk-breakage-workaround.patch
 # updated patch from fedora, below
 ccsm-removeshebangs.patch
