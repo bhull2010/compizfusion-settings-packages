@@ -1,3 +1,11 @@
+compizfusion-settings (0.8.8-1) unstable; urgency=low
+
+  * Rename package to compizfusion-settings
+  * Apply patches in debian/ and switch to 3.0 (native) format
+  * Bump version to 0.8.8 to match other compizfusion packages
+
+ -- Brent Hull <bhull2010@live.com>  Sat, 20 Apr 2013 18:16:39 -0400
+
 ccsm (0.8.4-5) unstable; urgency=low
 
   * non-maintainer fork
